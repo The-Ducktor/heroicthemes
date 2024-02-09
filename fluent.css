@@ -1,0 +1,69 @@
+body.fluent {
+  --text-default: #bebebe;
+  --text-secondary: #c3eeff;
+  --text-tertiary: #11111b;
+
+  --background: #333333;
+  --background-darker: #202020;
+  --background-lighter: #454545;
+  --body-background: #202020;
+  --gradient-body-background: #202020;
+  --input-background: #2e2e2e;
+  --controller-hints-background: transparent;
+  --current-background: #202020;
+  --modal-background: #11111b;
+  --modal-border: #40bdff;
+  --osk-background: #2b2b2b;
+  --osk-button-background: #323232;
+  --osk-button-border: #11111b;
+  --search-bar-background: #323232;
+  --search-bar-border: #323232;
+
+  --action-icon: #ffffff;
+  --action-icon-hover: #49aae5;
+  --action-icon-active: #40bdff;
+  --icons-background: #2b2b2b;
+
+  --primary-button: #40bdff;
+  --primary-button-overlay: #74c7ec;
+  --secondary-button: #49aae5;
+  --secondary-button-overlay: #49aae5;
+  --tertiary-button: #bebebe;
+  --tertiary-button-overlay: #d93c01;
+  --success-button: #61bf84;
+  --disabled-button: #202020;
+  --disabled-button-overlay: #11111b;
+
+  --navbar-active: #40bdff;
+  --navbar-inactive: #ffffff;
+  --navbar-active-background: #323232;
+  --navbar-accent: #49aae5;
+  --navbar-background: #202020;
+  --divider: #202020;
+
+  --success: #61bf84;
+  --success-hover: #94e2d5;
+  --danger: #bebebe;
+  --danger-hover: #d93c01;
+
+  --primary: #40bdff;
+  --secondary: #49aae5;
+  --accent: #40bdff;
+
+  --status-success: #61bf84;
+  --status-warning: #bebebe;
+  --status-danger: #c91f37;
+  --status-info: #40bdff;
+
+  --neutral-01: #11111b;
+  --neutral-02: #202020;
+  --neutral-03: #323232;
+  --neutral-04: #6c7086;
+  --neutral-05: #a6adc8;
+  --neutral-06: #ffffff;
+}
+
+body.fluent select,
+body.fluent input {
+  box-shadow: none !important;
+}
