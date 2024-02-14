@@ -29,7 +29,7 @@ body.fluent {
   --secondary-button: #49aae5;
   --secondary-button-overlay: #49aae5;
   --tertiary-button: #bebebe;
-  --tertiary-button-overlay: #d93c01;
+  --tertiary-button-overlay: #c91f37;
   --success-button: #61bf84;
   --disabled-button: #202020;
   --disabled-button-overlay: #11111b;
@@ -44,7 +44,7 @@ body.fluent {
   --success: #61bf84;
   --success-hover: #94e2d5;
   --danger: #bebebe;
-  --danger-hover: #d93c01;
+  --danger-hover: #c91f37;
 
   --primary: #40bdff;
   --secondary: #49aae5;
