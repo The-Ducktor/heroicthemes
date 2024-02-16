@@ -1,70 +1,128 @@
-
+/* Variables */
 body.fluent {
   --text-default: #bebebe;
   --text-secondary: #c3eeff;
   --text-tertiary: #11111b;
-
-  --background: #333333;
+  --background: #333;
   --background-darker: #202020;
   --background-lighter: #454545;
   --body-background: #202020;
+  --modal-background: rgba(17, 17, 27, 1);
   --gradient-body-background: #202020;
   --input-background: #2e2e2e;
   --controller-hints-background: transparent;
   --current-background: #202020;
-  --modal-background: #11111b;
   --modal-border: #40bdff;
   --osk-background: #2b2b2b;
   --osk-button-background: #323232;
   --osk-button-border: #11111b;
   --search-bar-background: #323232;
   --search-bar-border: #323232;
-
-  --action-icon: #ffffff;
+  --action-icon: #fff;
   --action-icon-hover: #49aae5;
   --action-icon-active: #40bdff;
   --icons-background: #2b2b2b;
-
   --primary-button: #40bdff;
   --primary-button-overlay: #74c7ec;
   --secondary-button: #49aae5;
-  --secondary-button-overlay: #49aae5;
+  --secondary-button-overlay: #40bdff;
   --tertiary-button: #bebebe;
   --tertiary-button-overlay: #c91f37;
   --success-button: #61bf84;
   --disabled-button: #202020;
   --disabled-button-overlay: #11111b;
-
   --navbar-active: #40bdff;
-  --navbar-inactive: #ffffff;
+  --navbar-inactive: #fff;
   --navbar-active-background: #323232;
   --navbar-accent: #49aae5;
   --navbar-background: #202020;
   --divider: #202020;
-
   --success: #61bf84;
   --success-hover: #94e2d5;
   --danger: #bebebe;
   --danger-hover: #c91f37;
-
   --primary: #40bdff;
   --secondary: #49aae5;
   --accent: #40bdff;
-
   --status-success: #61bf84;
   --status-warning: #bebebe;
   --status-danger: #c91f37;
   --status-info: #40bdff;
-
   --neutral-01: #11111b;
   --neutral-02: #202020;
   --neutral-03: #323232;
-  --neutral-04: #6c7086;
-  --neutral-05: #a6adc8;
-  --neutral-06: #ffffff;
+  --neutral-04: #49aae5;
+  --neutral-05: #bebebe;
+  --neutral-06: #fff;
+  --brand-secondary: #323232;
+  --accent-overlay: var(--action-icon-active);
 }
 
+/* Reset select and input styles */
 body.fluent select,
 body.fluent input {
   box-shadow: none !important;
+}
+
+/* Button styles with transitions */
+button {
+  background: var(--primary-button);
+  color: var(--icons-background);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: var(--primary-button-overlay);
+}
+
+/* Modal styles */
+.modal {
+  background: var(--modal-background);
+  border: 1px solid var(--modal-border);
+  padding: 10px;
+}
+
+/* Sidebar styles */
+.Sidebar {
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+.Sidebar__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.Sidebar__item.active {
+  background: var(--body-background);
+  color: var(--navbar-active);
+}
+
+.Sidebar__item:not(.exclude-bar)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 0;
+  width: 2px;
+  background: var(--navbar-accent);
+  transform-origin: top left;
+  transition: height 0.3s cubic-bezier(0.4, 2.3, 0.2, 1);
+}
+
+.Sidebar__item.active:not(.exclude-bar)::before {
+  height: calc(100% - 10px);
+}
+
+.Sidebar__item:hover {
+  width: 200px;
 }
