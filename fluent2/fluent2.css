@@ -1,0 +1,64 @@
+body.fluent2 {
+    --neutralPrimary: #bebebe;
+    --neutralSecondary: #c3eeff;
+    --neutralTertiary: #11111b;
+  
+    --backgroundPrimary: #333333;
+    --backgroundPrimaryDark: #202020;
+    --backgroundPrimaryLight: #454545;
+    --backgroundBody: #202020;
+    --backgroundGradientBody: #202020;
+    --backgroundInput: #2e2e2e;
+    --backgroundControllerHints: transparent;
+    --backgroundCurrent: #202020;
+    --backgroundModal: #11111b;
+    --borderModal: #40bdff;
+    --backgroundOSK: #2b2b2b;
+    --backgroundOSKButton: #323232;
+    --borderOSKButton: #11111b;
+    --backgroundSearchBar: #323232;
+    --borderSearchBar: #323232;
+  
+    --iconColor: #ffffff;
+    --iconColorHover: #49aae5;
+    --iconColorActive: #40bdff;
+    --backgroundIcons: #2b2b2b;
+  
+    --buttonPrimary: #40bdff;
+    --buttonPrimaryHover: #74c7ec;
+    --buttonSecondary: #49aae5;
+    --buttonSecondaryHover: #49aae5;
+    --buttonTertiary: #bebebe;
+    --buttonTertiaryHover: #c91f37;
+    --buttonSuccess: #61bf84;
+    --buttonDisabled: #202020;
+    --buttonDisabledHover: #11111b;
+  
+    --navbarBackgroundActive: #40bdff;
+    --navbarBackgroundInactive: #ffffff;
+    --navbarBackgroundActiveDark: #323232;
+    --navbarAccent: #49aae5;
+    --navbarBackground: #202020;
+    --dividerColor: #202020;
+  
+    --statusSuccess: #61bf84;
+    --statusWarning: #bebebe;
+    --statusDanger: #c91f37;
+    --statusInfo: #40bdff;
+  
+    --primaryColor: #40bdff;
+    --secondaryColor: #49aae5;
+    --accentColor: #40bdff;
+  
+    --textColorBody: #11111b;
+    --textColorDisabled: #202020;
+    --textColorSubtle: #323232;
+    --textColorSecondary: #6c7086;
+    --textColorPlaceholder: #a6adc8;
+    --textColorOnWhite: #ffffff;
+  }
+  
+  body.fluent2 select,
+  body.fluent2 input {
+    box-shadow: none !important;
+  }  
